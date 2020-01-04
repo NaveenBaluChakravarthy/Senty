@@ -2,7 +2,6 @@
 Project Number: #01
 Title : Sentiment Analysis
 Author : Naveen Chakravarthy Balasubramanian
-Description : Lot of negativity in the news these days. Taking InShorts as case study, prepare a summary of the news according to sentiments to understand overall emotion of the news of the day
 """
 
 # Defining contractions list 
@@ -93,7 +92,7 @@ X_cons = pd.DataFrame([list(dataset['Category']), scores, sentiment]).T
 X_cons.columns = ['Category', 'Score', 'Sentiment']
 X_cons.groupby(by=['Category']).describe()
 
-# Visuailizing the results
+# Visualizing the results
 colorpalette = {"positive" : "#0BFE0B", 
                 "negative" : "#FE360B", 
                 "neutral"  : "#3444EE"}
